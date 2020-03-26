@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  springboot-jasmin-container:
+    image: springboot-jasmin-app:1
+    build:
+      context: ./
+      dockerfile: app/Dockerfile
+    volumes:
+      - /data/springboot-jasmin-app
+    ports:
+      - "8081:8081"
+    environment:
+            - SPRING_DATASOURCE_URL=jdbc:mysql://172.18.0.1:3306/db_estudo?useTimezone=true&serverTimezone=America/Sao_Paulo
