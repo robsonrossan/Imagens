@@ -29,3 +29,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Arquivo informacao imagem Projeto jasmin
+/node_modules/*
+
+D:/DEPLOY/docker_imagens/Informacoes_Subir_Imagem.txt

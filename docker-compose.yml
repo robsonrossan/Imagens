@@ -9,6 +9,8 @@ services:
     volumes:
       - /data/springboot-jasmin-app
     ports:
-      - "8081:8081"
+      - "8181:8181"
     environment:
-            - SPRING_DATASOURCE_URL=jdbc:mysql://172.18.0.1:3306/db_estudo?useTimezone=true&serverTimezone=America/Sao_Paulo
+      - SPRING_DATASOURCE_URL=jdbc:mysql://172.18.0.1:3306/db_estudo?useTimezone=true&serverTimezone=America/Sao_Paulo
+      #- SPRING_DATASOURCE_USERNAME=root
+      #- SPRING_DATASOURCE_PASSWORD=root
